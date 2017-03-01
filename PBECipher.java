@@ -38,7 +38,7 @@ public class PBECipher {
 	 * These constant values can be stored elsewhere for ease of maintenance.
 	 * Only the password (passphrase) and the salt value need to be kept secret.
 	 * The passphrase and salt need to be complex to prevent brute force attack.
-	 * Because the salt can have only 8 bytes, it needs to be random to prevent dictionary attack.
+	 * The salt needs to be random to prevent dictionary attack.
 	 */
 	
 	private final String PASSPHRASE = "ThisIsThePassword";
