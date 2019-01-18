@@ -1,9 +1,13 @@
 /*
  * PBE AES256
  * This sample shows the use of PBE (password-based encryption) with the AES256 algorithm.
- * With this implementation, only the password (passphrase) and the salt value need to be kept secret.
+ * With this implementation, only the password (passphrase) and the salt value need to be kept secret
+ * for the purpose of (encrypted) data exchange.
+ * In certain cases, e.g. password hashing (not exactly the case in this code sample), 
+ * the salt value should a secure random and unique for each plaintext.
  * The decipher relies on the unique value of IV (initialization vector) generated from each cipher execution.
- * Because every IV and every cipher text are unique, it is safe to transmit them across the unprotected network, until the algorithm is deemed unsafe.
+ * Because every IV and every cipher text are unique, it is safe to transmit them across the unprotected network,
+ * until the algorithm is deemed unsafe.
  * 
  * NOTES: To use an algorithm, such as AES256, that exceeds the import control restriction (currently 128 bit),
  * obtain the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files from Oracle,
